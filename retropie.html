@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Oleg Perchyk</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h1 class="text-center">Retro Pie</h1>
+            <hr>
+
+            <p><b>Checklist:</b></p>
+            <ul>
+                <li>Raspberry Pi 2 Model B</li>
+                <li>Micro USB Charger (5 Volt)</li>
+                <li>HDMI Monitor</li>
+                <li>8gb MicroSD (or larger) </li>
+                <li>Keyboard + Mouse</li>
+                <li>Ethernet Cable</li>
+                <li>USB WiFi Adapter <span class="label label-warning">Optional</span></li>
+                <li>USB Bluetooth Adapter <span class="label label-warning">Optional</span></li>
+                <li>Enclosure or Case <span class="label label-warning">Optional</span></li>
+                <li>USB gamepad (we’ll be using a PS4 controller wired)</li>
+            </ul>
+
+
+            <p>
+                This tutorial will be the easiest / fastest way to setup RetroPie for instant retro gaming!<br/>
+                We’ll be using a Mac for this installation.     
+            </p>
+
+            <p><b>Software Needed:</b></p>
+            <ul>
+                <li><a href="https://retropie.org.uk/" target='_blank'>RetroPie Image</a></li>
+                <li><a href="https://etcher.io" target='_blank' >Etcher</a></li>
+            </ul>
+
+            <h4>Preparing the Pi</h4>
+            <p> 
+                This part is pretty straight forward.<br/>
+                Plug in display, mouse, keyboard, WiFi adapter (or ethernet cable), and controller.
+            </p>
+
+
+            <h4>Preparing the SD</h4>
+            <p>
+                Very easy as well.<br/>
+                Insert the MicroSD into your Mac using an adapter or hub.<br/>
+                Open up Etcher.
+            </p>
+        
+                <img src="img/etcher.png" class="img-rounded img-responsive"><br/>
+
+                
+
+            <p>
+                Select the RetroPi .img file we downloaded. <br/> 
+                Etcher should automatically detect your SD card. <br/>
+                If it doesn’t  let you, then open your DiskUtility and reformat the card with default settings.<br>
+                You can name it whatever you like.
+            </p>
+            <div class="">
+                <img src="img/diskutility.png" class="img-rounded img-responsive"><br/>
+            </div>
+                
+            
+            <p>
+                Go back to Etcher, hit <b>Flash!</b> and wait a few minutes while the image is flashed onto your SD.<br/>
+                You’re done! Next we are going to configure controllers and add some games.<br/>
+                Insert the SD into your Raspberry Pi and plug in the Micro USB for power.<br/>
+                If everything was done correctly you should soon see a splash screen with the RetroPie logo.<br/>
+                <hr>
+                In <a href="#">Part 2</a> we will add games to your newly setup Pi.
+                <!-- TODO add part 2, adding roms -->
+            </p>
+           
+        </div>
+    </div>   
+</div>
+
+    
+    
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
