@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>pomodoro timer</title>
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://fonts.google.com/specimen/Source+Sans+Pro">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <!-- buzzer sound -->
+        <audio id="buzzer" src="ding.m4a" type="audio/mpeg"></audio>
+
+    </head>
+
+    <body>
+        <div align="center">
+            <h1>Pomodoro Clock</h1>
+
+            <h2 id="timeType"></h2>
+
+            <div class="timeDiv">
+                <h3 id="title1">Session Time</h3>
+                <a href="#" class="btn btn-primary" id="minus5Clock"> - </a>
+                <h2 id="num">25</h2>
+                <a href="#" class="btn btn-primary" id="add5Clock"> + </a>
+                <a id="reset" href="#" class="btn btn-primary">Reset</a>
+            </div>
+
+            <div class="breakDiv">
+                <h3 id="title1">Break Time</h3>
+                <a href="#" class="btn btn-primary" id="minus5Break"> - </a>
+                <h2 id="breakNum">5</h2>
+                <a href="#" class="btn btn-primary" id="add5Break"> + </a>
+            </div>
+
+            <a href="#" class="btn btn-primary" id="start">Start</a>
+
+
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
+        <!-- My jQuery -->
+        <script type="text/javascript" src="js/scripts.js"></script>
+
+    </body>
+</html>

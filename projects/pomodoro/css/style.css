@@ -1,0 +1,15 @@
+body{
+    /* background-image: url('img/bmx.jpg'); */
+    background-color: #dcdcdc;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'Source Sans Pro';
+}
+
+h2{
+    display: inline;
+}
+
+#start{
+    margin: 10px
+}
