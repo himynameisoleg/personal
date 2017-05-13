@@ -14,16 +14,23 @@
         <!-- buzzer sound -->
         <audio id="buzzer" src="ding.m4a" type="audio/mpeg"></audio>
 
+        <style>
+            body {
+                padding-top: 70px;
+            }
+        </style>
+
     </head>
 
     <body>
         <div align="center">
-            <h1>Pomodoro Clock</h1>
+            <img class="img-responsive" src="css/img/logo.png" />
+            <hr>
 
             <h2 id="timeType"></h2>
 
             <div class="timeDiv">
-                <h3 id="title1">Session Time</h3>
+                <h3 id="title1"><b>Study Time</b></h3>
                 <a href="#" class="btn btn-primary" id="minus5Clock"> - </a>
                 <h2 id="num">25</h2>
                 <a href="#" class="btn btn-primary" id="add5Clock"> + </a>
@@ -31,7 +38,7 @@
             </div>
 
             <div class="breakDiv">
-                <h3 id="title1">Break Time</h3>
+                <h3 id="title1"><b>Break Time</b></h3>
                 <a href="#" class="btn btn-primary" id="minus5Break"> - </a>
                 <h2 id="breakNum">5</h2>
                 <a href="#" class="btn btn-primary" id="add5Break"> + </a>

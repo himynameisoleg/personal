@@ -14,11 +14,15 @@ $(document).ready(function() {
 
         var counter = setInterval(timer, 1000); //1000 ~ 1 second
 
+        //Convert minutes to seconds
+        count *= 60;
+        breakTime *= 60;
+
         //Work Timer Code
         function timer() {
 
             $("#start, #minus5Clock, #add5Clock, #breakNum, #add5Break, #minus5Break, #title1").hide(); //hide these when we his start
-            $("#timeType").html("Work Time: "); // add sesseion time text next to it
+            $("#timeType").html("Study Time: "); // add sesseion time text next to it
 
             count -= 1; //countdown count variable defined above
 
@@ -31,7 +35,18 @@ $(document).ready(function() {
                 $("#num").hide();
                 $("#timeType").html("DONE!");
             }
-            $("#num").html(count); //changes html text in num to current count
+
+            //Minutes : Seconds conversion logic
+            if(count % 60 >= 10) {
+                $("#num").html(Math.floor(count/60) + " : " + count % 60);
+            }else{
+                $("#num").html(Math.floor(count/60) + " : " + "0" + count % 60);
+
+            }
+
+
+
+            //dont need this anymore $("#num").html(count); //changes html text in num to current count
 
             //Break Function
             function breakTimer() {
@@ -50,7 +65,13 @@ $(document).ready(function() {
 
                 }
 
-                $("#breakNum").html(breakTime);
+                //Break Time m:ss formatting
+                if(breakTime % 60 >= 10) {
+                    $("#breakNum").html(Math.floor(breakTime/60) + " : " + breakTime % 60);
+                }else{
+                    $("#breakNum").html(Math.floor(breakTime/60) + " : " + "0" + breakTime % 60);
+
+                }
 
             }
         }
